@@ -11,8 +11,8 @@ html {
 .page {
   inline-size: 1200px;
   block-size: 100%;
+  display: flex;
   margin: auto;
-  padding: 133px 30px;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
@@ -39,14 +39,101 @@ ol {
 }
 
 .content {
-  block-size: 100%;
+  inline-size: 1140px;
+  block-size: 534px;
+  margin: auto;
   display: flex;
   align-items: end;
   gap: 30px;
+  outline: 1px solid white;
 }
 
 .result {
-  flex-grow: 1;
+  inline-size: 711px;
+} 
+
+.result__video-container {
+  margin-bottom: 16px;
+}
+
+.result__video {
+  display: block;
+  width: 100%;
+}
+
+.search-form {
+  display: flex;
+  gap: 40px;
+}
+
+.search-form__textfield {
+  width: 225px;
+}
+
+.search-form__checkbox-list {
+  width: 212px;
+}
+
+.button {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 6px 0;
+}
+
+.search-form__submit-button {
+  width: 194px;
+}
+
+.content__details {
+  inline-size: 399px;
+}
+
+.title {
+  font-family: Oswald, sans-serif;
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 0.94;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+}
+
+.content__accent {
+  color: #545050;
+}
+
+.content__list {
+  block-size: 298px;
+  overflow: auto;
+}
+
+.content__list::-webkit-scrollbar { 
+  display: none;
+}
+
+.content__card-link {
+  display: block;
+  color: currentColor;
+  text-decoration: none;
+  margin-bottom: 30px;
+}
+
+.content__video-card-description-container {
+  display: inline-block;
+  width: 200px;
+  vertical-align: top;
+}
+
+.content__video-card-thumbnail {
+  width: 194px;
+  vertical-align: top;
+}
+
+.more-button {
+  width: 100%;
 }
 
 .visually-hidden {
@@ -58,26 +145,4 @@ ol {
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-} 
-
-.content__details {
-  inline-size: 400px;
-  block-size: 100%;
-}
-
-.title {
-  font-family: Oswald;
-  font-size: 75px;
-  font-weight: 700;
-  line-height: 0.94;
-  text-transform: uppercase;
-}
-
-.content__accent {
-  color: #545050;
-}
-
-.search-form {
-  display: flex;
-  gap: 30px;
 }
