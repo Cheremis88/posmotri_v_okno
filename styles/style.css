@@ -153,13 +153,16 @@ ol {
   display: inline-block;
   width: 19px;
   height: 19px;
-  border: 1px solid white;
+  outline: 1px solid white;
   vertical-align: top;
 }
 
-.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
-  position: absolute;
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
   content: '';
+  position: relative;
+  display: inline-block;
+  width: 17px;
+  height: 17px;
   inset: 1px;
   background-color: white;
 }
